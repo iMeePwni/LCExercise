@@ -23,10 +23,10 @@ class MergeTwoTreesTest {
     }
 
     @Test
-    fun mesgeTwoTreesTest() {
+    fun mergeTwoTreesTest() {
 
-        var mergedTree = MergeTwoTrees().solution(t1, t2)
-        var expectedTree = TreeNode(3,
+        val mergedTree = MergeTwoTrees().solution(t1, t2)
+        val expectedTree = TreeNode(3,
                 TreeNode(4, TreeNode(5), TreeNode(4)),
                 TreeNode(5, null, TreeNode(7)))
 

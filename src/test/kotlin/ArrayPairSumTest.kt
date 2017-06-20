@@ -16,9 +16,9 @@ class ArrayPairSumTest {
 
     @Test
     fun solution() {
-        var solution = ArrayPairSum().solution(nums)
+        val solution = ArrayPairSum().solution(nums)
 
-        var expected = 4
+        val expected = 4
 
         Assert.assertEquals(expected, solution)
     }

@@ -8,34 +8,34 @@ class HammingDistanceTest {
 
     @Test
     fun hammingDistanceTest() {
-        var x = 1
-        var y = 4
+        val x = 1
+        val y = 4
 
-        var solotion = HammingDistance().solution(x, y)
-        var expected = 2
+        val solution = HammingDistance().solution(x, y)
+        val expected = 2
 
-        Assert.assertEquals(expected, solotion)
+        Assert.assertEquals(expected, solution)
     }
 
     @Test
     fun hammingDistanceXTest() {
-        var x = -1
-        var y = 4
+        val x = -1
+        val y = 4
 
-        var solotion = HammingDistance().solution(x, y)
-        var expected = null
+        val solution = HammingDistance().solution(x, y)
+        val expected = null
 
-        Assert.assertEquals(expected, solotion)
+        Assert.assertEquals(expected, solution)
     }
 
     @Test
     fun hammingDistanceYTest() {
-        var x = 1
-        var y = Math.pow(2.0, 31.0).toInt()
+        val x = 1
+        val y = Math.pow(2.0, 31.0).toInt()
 
-        var solotion = HammingDistance().solution(x, y)
-        var expected = null
+        val solution = HammingDistance().solution(x, y)
+        val expected = null
 
-        Assert.assertEquals(expected, solotion)
+        Assert.assertEquals(expected, solution)
     }
 }

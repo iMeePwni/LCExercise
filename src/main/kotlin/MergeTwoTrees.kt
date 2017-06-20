@@ -8,8 +8,8 @@ class MergeTwoTrees {
         if (t1 == null && t2 == null) return null
 
         return TreeNode((t1?.middle ?: 0) + (t2?.middle ?: 0),
-                solution(t1?.left ?: null, t2?.left ?: null),
-                solution(t1?.right ?: null, t2?.right ?: null))
+                solution(t1?.left, t2?.left),
+                solution(t1?.right, t2?.right))
     }
 
 

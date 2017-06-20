@@ -14,7 +14,7 @@ class MergeTwoTreesTest {
 
         initTrees()
 
-        var mergedTree = MergeTwoTrees().mergeTrees(t1, t2)
+        var mergedTree = MergeTwoTrees().solution(t1, t2)
         var expectedTree = TreeNode(3,
                 TreeNode(4, TreeNode(5), TreeNode(4)),
                 TreeNode(5, null, TreeNode(7)))

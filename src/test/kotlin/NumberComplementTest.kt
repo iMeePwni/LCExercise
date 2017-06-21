@@ -17,4 +17,15 @@ internal class NumberComplementTest {
         Assert.assertEquals(expected, solution)
     }
 
+    @Test
+    fun otherSolution() {
+        val x = 5
+        val numberComplement = NumberComplement()
+
+        val expected = 2
+        val solution = numberComplement.otherSolution(x)
+
+        Assert.assertEquals(expected, solution)
+    }
+
 }

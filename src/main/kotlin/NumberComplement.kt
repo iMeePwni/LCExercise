@@ -12,7 +12,17 @@ class NumberComplement {
         val result = (0..binaryString.length - 1)
                 .filter { binaryString[it].equals('0') }
                 .sumBy { Math.pow(2.0, it.toDouble()).toInt() }
-
         return result
+    }
+
+    fun otherSolution(x: Int): Int? {
+        var sum = 0
+        var i = 0
+
+        while (sum < x) {
+            sum += Math.pow(2.0, i++.toDouble()).toInt()
+        }
+
+        return sum - x
     }
 }

@@ -1,5 +1,4 @@
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 
 /**
@@ -7,21 +6,14 @@ import org.junit.Test
  */
 class ArrayPairSumTest {
 
-    lateinit var numbs: IntArray
-
-    @Before
-    fun init() {
-        numbs = intArrayOf(1, 4, 3, 2)
-    }
-
     @Test
     fun solution() {
-        val solution = ArrayPairSum().solution(numbs)
+        val numbs = intArrayOf(1, 4, 3, 2)
 
+        val solution = ArrayPairSum().solution(numbs)
         val expected = 4
 
         Assert.assertEquals(expected, solution)
     }
-
 
 }

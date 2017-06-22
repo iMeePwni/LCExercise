@@ -1,5 +1,4 @@
 import org.junit.Assert
-import org.junit.Before
 import org.junit.Test
 
 /**
@@ -7,23 +6,16 @@ import org.junit.Test
  */
 class MergeTwoTreesTest {
 
-    lateinit var t1: TreeNode
-    lateinit var t2: TreeNode
+    @Test
+    fun mergeTwoTreesTest() {
 
-    @Before
-    fun initTrees() {
-
-        t1 = TreeNode(middle = 1,
+        val t1 = TreeNode(middle = 1,
                 left = TreeNode(middle = 3, left = TreeNode(5)),
                 right = TreeNode(2))
 
-        t2 = TreeNode(2,
+        val t2 = TreeNode(2,
                 TreeNode(middle = 1, right = TreeNode(4)),
                 TreeNode(middle = 3, right = TreeNode(7)))
-    }
-
-    @Test
-    fun mergeTwoTreesTest() {
 
         val mergedTree = MergeTwoTrees().solution(t1, t2)
         val expectedTree = TreeNode(middle = 3,

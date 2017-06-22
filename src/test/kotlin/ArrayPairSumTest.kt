@@ -7,16 +7,16 @@ import org.junit.Test
  */
 class ArrayPairSumTest {
 
-    lateinit var nums: IntArray
+    lateinit var numbs: IntArray
 
     @Before
     fun init() {
-        nums = intArrayOf(1, 4, 3, 2)
+        numbs = intArrayOf(1, 4, 3, 2)
     }
 
     @Test
     fun solution() {
-        val solution = ArrayPairSum().solution(nums)
+        val solution = ArrayPairSum().solution(numbs)
 
         val expected = 4
 

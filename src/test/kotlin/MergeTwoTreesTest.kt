@@ -13,22 +13,22 @@ class MergeTwoTreesTest {
     @Before
     fun initTrees() {
 
-        t1 = TreeNode(1,
-                TreeNode(3, TreeNode(5)),
-                TreeNode(2))
+        t1 = TreeNode(middle = 1,
+                left = TreeNode(middle = 3, left = TreeNode(5)),
+                right = TreeNode(2))
 
         t2 = TreeNode(2,
-                TreeNode(1, null, TreeNode(4)),
-                TreeNode(3, null, TreeNode(7)))
+                TreeNode(middle = 1, right = TreeNode(4)),
+                TreeNode(middle = 3, right = TreeNode(7)))
     }
 
     @Test
     fun mergeTwoTreesTest() {
 
         val mergedTree = MergeTwoTrees().solution(t1, t2)
-        val expectedTree = TreeNode(3,
-                TreeNode(4, TreeNode(5), TreeNode(4)),
-                TreeNode(5, null, TreeNode(7)))
+        val expectedTree = TreeNode(middle = 3,
+                left = TreeNode(middle = 4, left = TreeNode(5), right = TreeNode(4)),
+                right = TreeNode(middle = 5, right = TreeNode(7)))
 
         Assert.assertEquals(expectedTree, mergedTree)
     }

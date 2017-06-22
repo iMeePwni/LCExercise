@@ -1,10 +1,10 @@
 import org.junit.Assert
 import org.junit.Test
 
-/**
- * Created by guofeng on 2017/6/21.
- */
-internal class NumberComplementTest {
+/*
+* Created by guofeng on 2017/6/21.
+*/
+class NumberComplementTest {
 
     @Test
     fun solution() {

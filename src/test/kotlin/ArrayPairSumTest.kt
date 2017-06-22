@@ -1,9 +1,9 @@
 import org.junit.Assert
 import org.junit.Test
 
-/**
- * Created by guofeng on 2017/6/20.
- */
+/*
+* Created by guofeng on 2017/6/20.
+*/
 class ArrayPairSumTest {
 
     @Test

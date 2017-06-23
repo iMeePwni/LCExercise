@@ -18,4 +18,16 @@ class ReshapeTheMatrixTest {
 
         Assert.assertArrayEquals(expected, solution)
     }
+
+    @Test
+    fun solutionIllegal() {
+        val numbs = arrayOf(intArrayOf(1, 2), intArrayOf(3, 4))
+        val row = 2
+        val column = 4
+        val reshapeTheMatrix = ReshapeTheMatrix()
+
+        val solution = reshapeTheMatrix.solution(numbs, row, column)
+
+        Assert.assertNull(solution)
+    }
 }

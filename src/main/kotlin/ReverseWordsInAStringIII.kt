@@ -4,6 +4,12 @@
  */
 class ReverseWordsInAStringIII {
     fun solution(s: String): String {
-        return ""
+        val words = s.split(" ")
+        val sb = StringBuffer()
+        words.forEach({
+            sb.append(StringBuffer().append(it).reverse().toString()).append(" ")
+        })
+        sb.deleteCharAt(sb.length - 1)
+        return sb.toString()
     }
 }

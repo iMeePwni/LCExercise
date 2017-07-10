@@ -4,7 +4,33 @@
     <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
     <groovy codeStyle="LEGACY" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Downloads/sharp-parent/sharp-slc-net" />
+    <file type="web" url="file://$USER_HOME$/Downloads/sharp-parent/sharp-slc-purifier" />
+    <file type="web" url="file://$USER_HOME$/Downloads/sharp-parent/sharp-slc-push" />
+    <file type="web" url="file://$USER_HOME$/Downloads/sharp-parent/sharp-slc-wechat" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$USER_HOME$/Downloads/sharp-parent/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$USER_HOME$/Downloads/sharp-parent/pom.xml" />
+        <option value="$USER_HOME$/Downloads/sharp-parent/sharp-slc-common/pom.xml" />
+        <option value="$USER_HOME$/Downloads/sharp-parent/sharp-slc-net/pom.xml" />
+        <option value="$USER_HOME$/Downloads/sharp-parent/sharp-slc-purifier/pom.xml" />
+        <option value="$USER_HOME$/Downloads/sharp-parent/sharp-slc-push/pom.xml" />
+        <option value="$USER_HOME$/Downloads/sharp-parent/sharp-slc-wechat/pom.xml" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
   </component>
 </project>

@@ -1,41 +1,41 @@
-import java.util.*;
+import java.util.Stack;
 
 /**
  * Created by guofeng on 2017/7/17.
  */
 public class MinStack {
-    private List<Integer> list;
-    private Map<Integer, Integer> map;
-    private int position;
-    private int min = Integer.MIN_VALUE;
+
+    private Stack<Element> stack;
 
     public MinStack() {
-        list = new ArrayList();
-        map = new HashMap();
-        position = -1;
-        map.put(position, min);
+        stack = new Stack();
     }
 
     public void push(int x) {
-        position++;
-        list.add(x);
-        map.put(position, Math.min(x, map.get(position--)));
+        int min = (stack.empty()) ? x : Math.min(stack.peek().min, x);
+        stack.push(new Element(x, min));
     }
 
     public void pop() {
-        if (position < 0) return;
-        list.remove(position);
-        map.remove(position);
-        position--;
+        stack.pop();
+
     }
 
     public int top() {
-        if (position < 0)
-            return 0;
-        return list.get(position);
+        return stack.peek().value;
     }
 
     public int getMin() {
-        return map.get(position);
+        return stack.peek().min;
+    }
+
+    static class Element {
+        int value;
+        int min;
+
+        public Element(int value, int min) {
+            this.value = value;
+            this.min = min;
+        }
     }
 }

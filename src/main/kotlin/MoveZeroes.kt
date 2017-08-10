@@ -3,9 +3,9 @@
  */
 class MoveZeroes {
     fun solution(ints: IntArray): IntArray {
-        if (ints.isEmpty()) {
+        if (ints.isEmpty())
             println("ints is empty")
-        } else {
+        else {
             var insertPos = 0
             ints.forEach {
                 if (it != 0) ints[insertPos++] = it
